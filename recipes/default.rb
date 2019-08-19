@@ -27,8 +27,7 @@ end
 
 
 execute 'update for python' do
-  command ' sudo apt update
-'
+  command ' sudo apt update'
 end
 
 execute 'python-pip install plugins' do
