@@ -8,6 +8,7 @@ apt_update 'update_sources' do
   action :update
 end
 
+
 package 'python' do
   action :install
 end
@@ -25,7 +26,12 @@ package 'libffi-dev' do
 end
 
 execute 'python-pip install plugins' do
-  command 'pip install Flask==0.10.1'
+  command 'sudo apt install python-minimal'
+end
+
+
+execute 'python-pip install plugins' do
+  command 'pip install flask==0.10.1'
 end
 
 execute 'python-pip install plugins' do
