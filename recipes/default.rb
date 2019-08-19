@@ -25,6 +25,12 @@ package 'libffi-dev' do
   action :install
 end
 
+
+execute 'update for python' do
+  command ' sudo apt update
+'
+end
+
 execute 'python-pip install plugins' do
   command 'sudo apt install python-minimal'
 end
