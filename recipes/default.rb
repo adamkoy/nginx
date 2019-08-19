@@ -32,7 +32,7 @@ execute 'update for python' do
 end
 
 execute 'python-pip install plugins' do
-  command 'sudo apt install python-minimal'
+  command 'sudo apt install python-minimal -y'
 end
 
 
